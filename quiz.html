@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passcode Entry</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/common-pixel');
+      </style>
+        <link href="https://fonts.cdnfonts.com/css/spacetype" rel="stylesheet">
+        <style>
+          @import url('https://fonts.cdnfonts.com/css/spacetype');
+          </style>
+</head>
+<body> 
+  <div class="passcode-container">
+    <div class="passcode-input">Passcode: </div> <!-- Added input container -->
+    <div class="passcode-row">
+        <button class="passcode-button" onclick="addPasscode(1)">1</button>
+        <button class="passcode-button" onclick="addPasscode(2)">2</button>
+        <button class="passcode-button" onclick="addPasscode(3)">3</button>
+    </div>
+    <div class="passcode-row">
+        <button class="passcode-button" onclick="addPasscode(4)">4</button>
+        <button class="passcode-button" onclick="addPasscode(5)">5</button>
+        <button class="passcode-button" onclick="addPasscode(6)">6</button>
+    </div>
+    <div class="passcode-row">
+        <button class="passcode-button" onclick="addPasscode(7)">7</button>
+        <button class="passcode-button" onclick="addPasscode(8)">8</button>
+        <button class="passcode-button" onclick="addPasscode(9)">9</button>
+    </div>
+    <div class="passcode-row">
+      <button class="passcode-button enter" onclick="checkPasscodeAndRedirect()">ENTER</button>
+  </div>
+  </div>
+</body>
+
+
+
+
+      ...........
+  
+    
+      <body>
+        <div class="TTT-container1">
+          <div class="TTT-input">Tic Tac Toe </div>
+          <div class="container">
+              <div class="cell" onclick="makeMove(0, 0)"></div>
+              <div class="cell" onclick="makeMove(0, 1)"></div>
+              <div class="cell" onclick="makeMove(0, 2)"></div>
+              <div class="cell" onclick="makeMove(1, 0)"></div>
+              <div class="cell" onclick="makeMove(1, 1)"></div>
+              <div class="cell" onclick="makeMove(1, 2)"></div>
+              <div class="cell" onclick="makeMove(2, 0)"></div>
+              <div class="cell" onclick="makeMove(2, 1)"></div>
+              <div class="cell" onclick="makeMove(2, 2)"></div>
+          </div>
+          <button class="reset-button" onclick="resetGame()">Reset Game</button>
+        </div>
+      </body>
+
+
+
+
+      ...........
+
+
+
+
+
+      <div class="MQ-container1">
+        <div class="MQ-input">Math Quiz</div>
+        <div id="timer">Time: <span id="time-left">6</span></div>
+        <div id="choices">
+          <div id="question"></div>
+        </div>
+        <div id="choices">
+          <button class="choice" onclick="answerQuestion(0)"></button>
+          <button class="choice" onclick="answerQuestion(1)"></button>
+        </div>
+        <div id="choices">
+          <button class="choice" onclick="answerQuestion(2)"></button>
+          <button class="choice" onclick="answerQuestion(3)"></button>
+        </div>
+        <div id="score"></div>
+        <div id="end-message" style="display: none;"></div>
+        <div id="MQ-container2" style="display: none;">
+        <img id="happy-image" src="M2.jpeg" style="display: none; width: 100px; height: 100px;">
+        <img id="sad-image" src="M1.jpeg" style="display: none; width: 100px; height: 100px;">
+      </div>
+        <button id="start-button" onclick="startQuiz()">START</button>
+        <button id="repeat-button" style="display: none;" onclick="repeatQuiz()">Repeat Quiz</button>
+
+      </div>
+      </body>
+
+
+      <body>
+        <!-- Your HTML content -->
+        <div class="icon-container">
+            <div class="icon" onclick="navigateToPage('task.html')">
+                <div class="icon-content">
+                    <img src="TASK.png" alt="TASK">
+                    <div class="icon-notification"></div> <!-- Notification badge -->
+                </div>
+            </div>
+        </div>
+    </body>
+
+<script src="quiz.js"></script>
+
+</html>

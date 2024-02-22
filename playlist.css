@@ -1,0 +1,156 @@
+
+body {
+    background-image: url('BCK.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.icon {
+    margin: 0px; /* Reduce the margin to make the distance between icons smaller */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto; /* Allow icons to shrink and grow */
+    margin-right: 20px; /* Add spacing between icons */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Scale the icon to 1.1x size when hovered */
+}
+
+.icon img {
+    max-width: 300px; /* Adjust the size of the icons */
+    max-height: 300px;
+    display: block;
+    width: auto; /* Let the browser adjust the width automatically */
+    height: auto; /* Let the browser adjust the height automatically */
+}
+
+.icon-text {
+    margin-top: 25px; /* Increase the spacing between the icon and the text */
+    font-size: 25px; /* Adjust the font size of the text */
+    text-align: center; /* Align the text to the center */
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'Common Pixel', sans-serif;
+    color: white; /* Set the font color to white */
+}
+
+
+.icon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+
+/* Style the container for icons */
+.icon-container {
+    display: flex; /* Use flexbox for the container */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    width: 100vw; /* Set the width to full viewport width */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Hide scrollbar */
+.icon-container::-webkit-scrollbar {
+    display: none;
+}
+
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+
+/* Style the container for icons */
+.icon-container {
+    display: flex; /* Use flexbox for the container */
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    width: calc(100vw - 40px); /* Set the width to full viewport width minus padding */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: relative; /* Set position relative for absolute positioning of arrow icons */
+    background-color: #b5b5b585; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+/* Style individual icon */
+.icon {
+    flex: 0 0 auto; /* Allow icons to shrink and grow */
+    margin-right: 20px; /* Add spacing between icons */
+    padding: 10px; /* Add padding */
+    background-color: #ffffff82; /* Icon background color */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Style individual icon on hover */
+.icon:hover {
+    background-color: #e0e0e0; /* Darker background color */
+}
+
+/* Hide scrollbar */
+.icon-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style the arrow icons */
+.scroll-arrow {
+    position: absolute; /* Position the arrows absolutely */
+    top: 50%; /* Align the arrows vertically */
+    height: 40px; /* Set the arrow height */
+    display: flex; /* Use flexbox for arrow content */
+    align-items: center; /* Center arrow content vertically */
+    cursor: pointer; /* Change cursor to pointer */
+    background-color: #ffffff83; /* Arrow background color */
+    border-radius: 50%; /* Rounded shape */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Style the arrow icon images */
+.scroll-arrow img {
+    width: 20px; /* Set the width of the arrow icons */
+}
+
+/* Style arrow icons on hover */
+.scroll-arrow:hover {
+    background-color: #e0e0e073; /* Darker background color */
+}
+
+/* Style the right arrow */
+.scroll-arrow-right {
+    right: 10px; /* Align the right arrow to the right */
+    transform: translateY(-50%); /* Center the right arrow vertically */
+}
+
+/* Style the left arrow */
+.scroll-arrow-left {
+    left: 10px; /* Align the left arrow to the left */
+    transform: translateY(-50%) rotate(180deg); /* Center and rotate the left arrow */
+}
+.goback-icon {
+    width: 40px; /* Adjust the width as needed */
+    cursor: pointer;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above other content */
+    animation: popInOut 2s infinite alternate; /* Apply animation */
+}
+
+/* Animation keyframes */
+@keyframes popInOut {
+    50% { transform: translateX(-50%) scale(1.2); } /* Pop out at halfway point */
+    100% { transform: translateX(-50%) scale(1); } /* Return to normal size */
+}

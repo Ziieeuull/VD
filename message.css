@@ -1,0 +1,165 @@
+body {
+    background-image: url('BCK.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 10;
+    font-family: 'Public Pixel', sans-serif;                                          
+    color: rgb(221, 201, 201); /* Set the font color to white */
+    text-align: center;
+    padding: 30px;
+}
+
+
+.text-between-icons {
+    text-align: left; /* Align the text to the center */
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'Public Pixel', sans-serif;                                            
+    margin-right: 10px; /* Add spacing between the text and the icons */
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 14px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Add an outline effect */
+    color: rgb(0, 0, 0); /* Set the text color */
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+:root {
+	--pixel-bg: rgba(253, 238, 213, 0.996); /* Inner background color */
+	--pixel-border: rgb(221, 54, 54); /* Inner border color: */
+	--pixel-border-2: rgb(219, 213, 213); /* Middle border color: */
+	--pixel-border-3: var(--pixel-border); /* Outer border color */
+	--pixel: .220rem; /* Pixel size */
+    font-family: 'Public Pixel', sans-serif;
+    margin-top: -100px;
+}
+
+.pixel-border {
+	background: var(--pixel-bg);
+	box-shadow:
+		
+	/* Inner Background Color */
+		0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+		0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+		0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+		0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+		0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+		0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+		0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+		0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+		
+	/* Pixel Border Layer 1 */
+		calc(var(--pixel) * -1) 0 0 0 var(--pixel-border),
+		var(--pixel) 0 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * -2) 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * 2) 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * -5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+		0 calc(var(--pixel) * 5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+		0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+		0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+		0 calc(var(--pixel) * -10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+		0 calc(var(--pixel) * 10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+		0 calc(var(--pixel) * -13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+		0 calc(var(--pixel) * 13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+		
+	/* Pixel Border Layer 2 */
+		calc(var(--pixel) * -2) 0 0 0 var(--pixel-border-2),
+		calc(var(--pixel) * 2) 0 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * -1) 0 var(--pixel) var(--pixel-border-2), 
+		0 var(--pixel) 0 var(--pixel) var(--pixel-border-2),
+		0 calc(var(--pixel) * -4) 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * 4) 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+		0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+		0 calc(var(--pixel) * -8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+		0 calc(var(--pixel) * 8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+		0 calc(var(--pixel) * -11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+		0 calc(var(--pixel) * 11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+		0 calc(var(--pixel) * -14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+		0 calc(var(--pixel) * 14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+		
+	/* Border Layer 3: --pixel-border-3 */
+		calc(var(--pixel) * -3) 0 0 0 var(--pixel-border-3),
+		calc(var(--pixel) * 3) 0 0 0 var(--pixel-border-3),
+		0 0 0 calc(var(--pixel) * 2) var(--pixel-border-3),
+		0 calc(var(--pixel) * -3) 0 var(--pixel) var(--pixel-border-3),
+		0 calc(var(--pixel) * 3) 0 var(--pixel) var(--pixel-border-3),
+		0 calc(var(--pixel) * -5) 0 0 var(--pixel-border-3),
+		0 calc(var(--pixel) * 5) 0 0 var(--pixel-border-3),
+		0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+		0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+		0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -2) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -2) var(--pixel-border-3),
+		0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -4) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -4) var(--pixel-border-3),
+		0 calc(var(--pixel) * -15) 0 calc(var(--pixel) * -6) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 15) 0 calc(var(--pixel) * -6) var(--pixel-border-3);
+    height: 440px; /* Set a fixed height for all images */
+    object-fit: auto; /* Ensure the image covers the entire container */
+    margin: auto;
+    width: 650px; 
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(221, 54, 54);                                       
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	display: grid;
+	padding-inline: min(5vw, 1em);
+    margin: auto;
+    font-family: 'Public Pixel', sans-serif;         
+}
+section {
+	margin: auto;
+	padding-inline: min(5vw, 1em);
+	text-align: center;
+    font-family: 'Public Pixel', sans-serif;
+    color: rgb(0, 0, 0); /* Set the font color to white */
+}
+
+.goback-icon {
+    width: 40px; /* Adjust the width as needed */
+    cursor: pointer;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above other content */
+    animation: popInOut 2s infinite alternate; /* Apply animation */
+}
+
+/* Animation keyframes */
+@keyframes popInOut {
+    50% { transform: translateX(-50%) scale(1.2); } /* Pop out at halfway point */
+    100% { transform: translateX(-50%) scale(1); } /* Return to normal size */
+}
+
+.icon-text {
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'Public Pixel', sans-serif;
+                                                
+}       
+.icons {
+    margin: 28px; /* Reduce the margin to make the distance between icons smaller */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.heart-icon {
+    width: 100px; /* Adjust the width of the heart icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between heart icons */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+    border-radius: 10%;
+		
+}
+

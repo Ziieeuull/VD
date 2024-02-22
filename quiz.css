@@ -1,0 +1,314 @@
+body {
+    background-image: url('INDEXBCK.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.passcode-button {
+    width: 60px; /* Adjust button width */
+    height: 60px; /* Adjust button height */
+    margin: 10px;
+    font-size: 24px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    text-align: center; /* Align the text to the center */
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'Common Pixel', sans-serif;
+    border-radius: 10px;
+}
+
+.passcode-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.passcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color */
+    padding: 20px; /* Add padding */
+    border-radius: 20px; /* Add border radius */
+}
+
+
+.passcode-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passcode-button.enter {
+    width: calc(100% - 20px); /* Full width minus margin */
+}
+
+.passcode-input {
+    color: white;
+    margin-bottom: 10px;
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'SpaceType', sans-serif;
+}
+
+
+
+/*TIC TAC TOE */
+
+
+body {
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'Common Pixel', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: auto;
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'Common Pixel', sans-serif;
+}
+
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.001);
+    display: inline-block;
+    font-size: 3em;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.082);
+    color: white; /* Set text color to white */
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.082);
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'SpaceType', sans-serif;
+                                                
+}
+
+.TTT-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color */
+    padding: 20px; /* Add padding */
+    border-radius: 20px; /* Add border radius */
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'SpaceType', sans-serif;
+                                                
+}
+
+.TTT-input {
+    color: white;
+    margin-bottom: 10px;
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'SpaceType', sans-serif;
+                                                
+}
+
+.reset-button {
+    width: calc(100% - 20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-rendering: pixelated;
+    font-family: 'Common Pixel', sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/*CONNECT 4*/
+
+body {
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+}
+
+#timer {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+    color: white;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+    color: white;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.082);
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+}
+
+.choice {
+    margin: 10px;
+    padding: 30px 40px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.082);
+    color: white; /* Text color */
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+}
+
+.MQ-input {
+    color: white;
+    margin-bottom: 15px;
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+}
+
+.MQ-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+}
+
+#start-button {
+    width: calc(100% - 20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-rendering: pixelated;
+    font-family: 'Common Pixel', sans-serif;
+    border-radius: 10px;
+}
+
+#repeat-button {
+    width: calc(100% - 20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-rendering: pixelated;
+    font-family: 'Common Pixel', sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+#end-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+    color: white;
+}
+
+#MQ-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(62, 59, 59, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    text-rendering: pixelated;
+    font-family: 'SpaceType', sans-serif;
+}
+
+
+
+/*TASK*/
+
+
+.icon-container {
+    position: fixed;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}
+
+.icon {
+    margin: 25px; /* Reduce the margin to make the distance between icons smaller */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: popInOut 1s infinite alternate; /* Use animation for continuous pop in and out */
+}
+
+/* Define the animation */
+@keyframes popInOut {
+    0% {
+        transform: scale(1); /* Start with normal size */
+    }
+    100% {
+        transform: scale(1.1); /* End with 20% larger size */
+    }
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Scale the icon to 1.1x size when hovered */
+}
+
+.icon img {
+    max-width: 100px; /* Adjust the size of the icons */
+    max-height: 100px;
+    display: block;
+    width: auto; /* Let the browser adjust the width automatically */
+    height: auto; /* Let the browser adjust the height automatically */
+}
+
+.icon-text {
+    margin-top: 15px; /* Increase the spacing between the icon and the text */
+    font-size: 15px; /* Adjust the font size of the text */
+    text-align: center; /* Align the text to the center */
+    text-rendering: pixelated; /* Apply pixelated rendering to the text */
+    font-family: 'Common Pixel', sans-seriF;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Set the font color to white */
+}
+
+
+.icon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-notification {
+    position: absolute;
+    top: -5px; /* Adjust the top position to overlap with the icon */
+    right: -5px; /* Adjust the right position to overlap with the icon */
+    width: 20px; /* Adjust the width of the notification badge */
+    height: 20px; /* Adjust the height of the notification badge */
+    background-color: red; /* Set the background color of the notification badge */
+    border-radius: 50%; /* Make the badge circular */
+}
+
